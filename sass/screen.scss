@@ -1,0 +1,121 @@
+// `IMPORTS & VARIABLES.
+//----------------------------------------------------------------------------------------------------
+
+@import "partials/base";
+@import "partials/reset";
+@import "compass";
+@import "partials/custom";
+
+
+
+// `SITE STYLING.
+//----------------------------------------------------------------------------------------------------
+
+
+// `Basic HTML.
+
+// set basic typographic rhythm. adjust in _base.scss
+// further explanation required? read http://atendesigngroup.com/blog/vertical-rhythm-compass
+@include establish-baseline;
+
+body {
+  background: white;
+  color: #333333;
+  font-family: $font-family;
+  // uncomment to see a baseline grid for debugging:
+  // @include debug-vertical-alignment;
+}
+
+header {
+  @include  padding-trailer (2)
+}
+
+footer {
+  @include  padding-leader (1)
+}
+
+#main {
+  @include  margin-trailer (1)
+}
+
+
+// typography
+
+h1 {
+  @include adjust-font-size-to(25px);
+}
+
+h2 {
+  @include adjust-font-size-to(23px);
+}
+
+h3 {
+  @include adjust-font-size-to(21px);
+}
+
+h4 {
+  @include adjust-font-size-to(19px);
+}
+
+h5 {
+  @include adjust-font-size-to(17px);
+}
+
+h6 {
+  @include adjust-font-size-to(15px);
+}
+
+p {
+  @include margin-trailer (1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// Navigation
+
+nav#topnav {
+  @include horizontal-list;
+  ul li {
+    @include adjust-leading-to(2);
+  }
+}
+
+nav#breadcrumb {
+  @include horizontal-list;
+  ul li {
+    @include adjust-font-size-to(12px, 2);
+  }
+}
+
+
+// Teaser on front page
+
+.teaser {
+  @include rhythm(0,1,1);
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #EEEEEE;
+}
+
+
+// Search form
+
+#site-search {
+  ul li {
+    @include adjust-leading-to(2);
+    float: left;
+  }
+}
+
