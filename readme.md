@@ -45,7 +45,7 @@ If you decided to develop with Compass/SASS edit the .scss files you find in Uns
 If you don't use Compass/SASS just edit the files in templates/styles as usual with ProcessWire.
 
 ## License
-The profile is licensed under MIT (http://opensource.org/licenses/mit-license.php) and GNU (http://www.gnu.org/licenses/gpl.html) aus Unsemantic is. However, the following works of others are incorporated and you have to respect the according licenses (if any):
+The profile is licensed under MIT (http://opensource.org/licenses/mit-license.php) and GNU (http://www.gnu.org/licenses/gpl.html) as Unsemantic is. However, the following works of others are incorporated and I'm asking you to respect the according licenses (if any):
 
 * Basic Site Profile that comes with ProcessWire, licensed under GNU
 * EmailObfuscator by Somartist (https://github.com/somatonic/EmailObfuscator)
