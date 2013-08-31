@@ -33,13 +33,13 @@ $scripts = $config->urls->templates . 'scripts';
 	<!--[if lt IE 9]>
 	  <script src='<?php echo $scripts ?>/html5.js'></script>
 	<![endif]-->
-	<link rel="stylesheet" href='<?php echo $styles ?>/screen.css' />
 	<!--[if (gt IE 8) | (IEMobile)]><!-->
 	  <link rel="stylesheet" href='<?php echo $styles ?>/unsemantic-grid-responsive.css' />
 	<!--<![endif]-->
 	<!--[if (lt IE 9) & (!IEMobile)]>
 	  <link rel="stylesheet" href='<?php echo $styles ?>/ie.css' />
 	<![endif]-->
+	<link rel="stylesheet" href='<?php echo $styles ?>/screen.css' />
 
 	<!-- uncomment and fill font family for google webfonts -->
 	<!-- link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Your font family' /> -->
