@@ -28,19 +28,16 @@ or (Mac OS)
 
 	sudo gem install compass
 
-That' it. You are done.
+That's it. You are done.
 
 ## Install the Profile
 Grab a copy of the latest ProcessWire (http://processwire.com/). Replace the install, modules and templates directories with those in this profile, as shown below:
 
 * /site-default/install/
-* /site-default/modules/
 * /site-default/templates/
 
-Do NOT transfer the directory /sass/ and the config.rb file to your server. Both remain on your local machine during development. See explanation below.
-
 ### Developing with the profile
-If you decided to develop with Compass/SASS edit the .scss files you find in UnsemanticSiteProfile/sass. Once you are done, you need to compile it to regular .css files. Please see this tutorial or the Compass project site to learn how to do that: http://leveluptuts.com/tutorials/compass-tutorials/2-adding-and-using-compass
+If you decided to develop with Compass/SASS edit the .scss files you find in UnsemanticSiteProfile/templates/scss. Once you are done, you need to compile it to regular .css files. Please see this tutorial or the Compass project site to learn how to do that: http://leveluptuts.com/tutorials/compass-tutorials/2-adding-and-using-compass
 
 If you don't use Compass/SASS just edit the files in templates/styles as usual with ProcessWire.
 
@@ -48,6 +45,4 @@ If you don't use Compass/SASS just edit the files in templates/styles as usual w
 The profile is licensed under MIT (http://opensource.org/licenses/mit-license.php) and GNU (http://www.gnu.org/licenses/gpl.html) as Unsemantic is. However, the following works of others are incorporated and I'm asking you to respect the according licenses (if any):
 
 * Basic Site Profile that comes with ProcessWire, licensed under GNU
-* EmailObfuscator by Somartist (https://github.com/somatonic/EmailObfuscator)
-* After Save Actions by nikala (https://github.com/niklaka/AfterSaveActions)
 * Holder by Ivan Malopinsky (https://github.com/imsky/holder), licensed under Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0). Commercial use requires attention!
