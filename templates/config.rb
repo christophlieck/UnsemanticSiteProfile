@@ -1,13 +1,12 @@
 preferred_syntax = :scss
 http_path = '/'
-css_dir = "../styles"
-sass_dir = "/"
-scss_dir = 'scss'
-images_dir = "../images"
-javascripts_dir = "../scripts"
+css_dir = "styles"
+sass_dir = "scss"
+images_dir = "styles/images"
+javascripts_dir = "scripts"
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
-line_comments = false
+# line_comments = false
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :expanded
