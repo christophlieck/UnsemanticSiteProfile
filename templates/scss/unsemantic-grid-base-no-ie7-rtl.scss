@@ -7,5 +7,8 @@ $unsemantic-ie7-support: false;
 $lang-forward: right;
 $lang-reverse: left;
 
+@import "partials/unsemantic-vars";
 @import "partials/unsemantic-ie-snap";
-@import "partials/unsemantic-grid-base";
+
+@include unsemantic-grid-placeholders;
+@include unsemantic-grid-base;

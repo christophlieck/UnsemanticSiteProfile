@@ -1,5 +1,7 @@
-$unsemantic-with-tablet: true;
 $unsemantic-ie7-support: false;
 
+@import "partials/unsemantic-vars";
 @import "partials/unsemantic-ie-snap";
-@import "partials/unsemantic-grid-base";
+
+@include unsemantic-grid-placeholders;
+@include unsemantic-grid-base-tablet;

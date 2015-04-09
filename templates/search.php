@@ -42,9 +42,12 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 // displays the current search query in the search box (via the $input->whitelist) and 
 // we wanted to make sure we had that setup before including the header template.
 
+$content = $out;
 
-?>
+include("./_main.inc");
 
+
+/*
 <?php include("./head.inc"); ?>
 <body class='<?php echo "$pageClass"; ?>'>
 	<div class="grid-container">
@@ -59,3 +62,7 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 	</div>
 </body>
 </html>
+
+*/
+
+?>

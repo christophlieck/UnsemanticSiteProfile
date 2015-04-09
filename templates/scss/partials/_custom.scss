@@ -1,7 +1,11 @@
-// this file is meant for custom mixins that override compass' mixins. must be the last file in the load order when imported to screen.scss
+// use this file for your own variables and mixins
 
-
-// Here we override Compass' horizontal-list mixin with our own settings
+// override Compass' horizontal-list mixin with our own settings
 @mixin horizontal-list($padding: 10px, $direction: left) {
   li {
     @include horizontal-list-item($padding, $direction); } }
+
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

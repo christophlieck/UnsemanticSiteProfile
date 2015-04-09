@@ -1,23 +1,8 @@
 <header>
 	<nav id='topnav' class='grid-66' role='navigation'>
-		<ul><?php
-		
-			// Create the top navigation list by listing the children of the homepage. 
-			// If the section we are in is the current (identified by $page->rootParent)
-			// then note it with <a class='on'> so we can style it differently in our CSS. 
-			// In this case we also want the homepage to be part of our top navigation, 
-			// so we prepend it to the pages we cycle through:
-			
-			$children = $homepage->children;
-			$children->prepend($homepage); 
-		
-			foreach($children as $child) {
-				$class = $child === $page->rootParent ? " class='on'" : '';
-				echo "<li><a$class href='{$child->url}'>{$child->title}</a></li>";
-			}
-
-		?></ul>
+		<?php echo $mainnav->render($navoptions); ?>
 	</nav>
+	<!-- Site Search -->
 	<div id="site-search" class="grid-33 hide-on-mobile">
 	<?php
 	$searchPage = wire('pages')->get('template=search');

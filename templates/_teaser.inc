@@ -1,4 +1,5 @@
 <?php if(count($page->contentTeaser) === 3): // three teasers are required ?> 
+<div class="clear"></div>
 <?php foreach($page->contentTeaser as $teaser): ?>
 <div class="grid-33">
 	<div class="teaser">

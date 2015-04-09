@@ -5,9 +5,11 @@ As Unsemantic grid system does, the profile takes advantage of the SASS CSS prep
 
 Here is what you get:
 
-* a fully responsive grid system with backwards compatibilty down to IE7
+* a fully responsive grid system with backwards compatibility down to IE7 (serves a static site for IE7)
 * very basic styling aligned to an em-based baseline grid
 * placeholder images via holder.js (https://github.com/imsky/holder) for easy prototyping
+* Superfish multi-level drop-down menu (https://github.com/joeldbirch/superfish)
+* some useful third-party plugins for Processwire
 * quick and easy incorporation of SASS via Compass
 * the pleasure to work with the best CMS framework out there
 
@@ -17,7 +19,7 @@ For an example of the site profile in action, see http://pcwcompass.contao-webse
 NOTE: It is not necessary but recommended to install Ruby and Compass. If you prefer "classic" CSS skip this step.
 
 ### Install Ruby
-In order to install SASS/Compass you need to have Ruby installed on your machine. Mac OS users got Ruby pre-installed with their OS, Windows users may want to use this easy-to-use installer: http://rubyinstaller.org/. Make sure, you activate "Add Ruby executables to your PATH" when the installer prompts for it.
+In order to install SASS/Compass you need to have Ruby installed on your machine. Mac OS users get Ruby pre-installed with their OS, Windows users may want to use this easy-to-use installer: http://rubyinstaller.org/. Make sure, you activate "Add Ruby executables to your PATH" when the installer prompts for it.
 
 ### Install Compass
 Once Ruby is present on your machine, you are ready to install Compass/SASS. Open a command line and enter
@@ -46,3 +48,4 @@ The profile is licensed under MIT (http://opensource.org/licenses/mit-license.ph
 
 * Basic Site Profile that comes with ProcessWire, licensed under GNU
 * Holder by Ivan Malopinsky (https://github.com/imsky/holder), licensed under Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0). Commercial use requires attention!
+* Superfish JQuery Menu Plugin by Joel Birch (https://github.com/joeldbirch/superfish).

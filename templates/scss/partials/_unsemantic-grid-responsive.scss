@@ -5,16 +5,18 @@
 $media-mobile-max: 767px !default;
 $media-desktop-min: 768px !default;
 
+@import "unsemantic-vars";
 @import "unsemantic-ie-snap";
 
-@media screen {
-  @import "unsemantic-grid-base";
-}
+@include unsemantic-grid-placeholders;
+@include unsemantic-grid-base;
 
 @media screen and (max-width: $media-mobile-max) {
-  @import "unsemantic-grid-mobile";
+  @include unsemantic-grid-placeholders(mobile);
+  @include unsemantic-grid-scoped(mobile);
 }
 
 @media screen and (min-width: $media-desktop-min) {
-  @import "unsemantic-grid-desktop";
+  @include unsemantic-grid-placeholders(desktop);
+  @include unsemantic-grid-scoped(desktop);
 }

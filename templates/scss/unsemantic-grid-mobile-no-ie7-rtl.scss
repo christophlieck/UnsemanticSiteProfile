@@ -7,4 +7,7 @@ $unsemantic-ie7-support: false;
 $lang-forward: right;
 $lang-reverse: left;
 
-@import "partials/unsemantic-grid-mobile";
+@import "partials/unsemantic-vars";
+
+@include unsemantic-grid-placeholders(mobile);
+@include unsemantic-grid-scoped(mobile);

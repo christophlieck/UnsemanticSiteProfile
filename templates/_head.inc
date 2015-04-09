@@ -1,25 +1,3 @@
-<?php
-
-// We pull some data from the homepage in a few places in this main template, so we keep it ready here
-$homepage = $pages->get('/');
-$pageClass = $page->name;
-$sectionClass = $page->rootParent->name;
-$titleVar = $page->rootParent->title;
-$templateClass = $page->template;
-
-if(empty($content)) $content = $page->body;
-
-// determine what the ever important browser <title> tag should be
-if($page->browser_title) $browserTitle = $page->browser_title; 
-else if($page === $homepage) $browserTitle = $page->headline; 
-else $browserTitle = $page->title . ' &bull; ' . $homepage->headline; 
-
-// add the path to styles/scripts directory
-$styles = $config->urls->templates . 'styles'; 
-$scripts = $config->urls->templates . 'scripts'; 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +6,7 @@ $scripts = $config->urls->templates . 'scripts';
 	<meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-	<meta name="description" content="" />
+	<meta name="description" content='<?php echo $metaDescription; ?>' />
 	<meta name="copyright" content="" />
 	<!--[if lt IE 9]>
 	  <script src='<?php echo $scripts ?>/html5.js'></script>
@@ -47,5 +25,8 @@ $scripts = $config->urls->templates . 'scripts';
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 	<!-- uncomment for placeholder images https://github.com/imsky/holder -->
 	<script src='<?php echo $scripts ?>/holder.js'></script>
+	<script src='<?php echo $scripts ?>/main.js'></script>
+	<!-- Superfish JS/CSS Dropdown http://users.tpg.com.au/j_birch/plugins/superfish/ -->
+	<script src='<?php echo $scripts ?>/superfish.js'></script>
 
 </head>

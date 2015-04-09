@@ -1,10 +1,15 @@
 // `IMPORTS & VARIABLES.
 //----------------------------------------------------------------------------------------------------
 
-@import "partials/base";
-@import "partials/reset";
+// Compass SASS framework http://compass-style.org/
 @import "compass";
+@import "partials/reset";
+// Your own settings and/or variables that override Compass
 @import "partials/custom";
+// Superfish dropdown menu http://users.tpg.com.au/j_birch/plugins/superfish/
+@import "partials/superfish";
+// Basic styling for Textformatter Accordion Module (https://github.com/Renobird/TextformatterAccordion.git)
+@import "partials/textformatterAccordion";
 
 
 
@@ -14,8 +19,8 @@
 
 // `Basic HTML.
 
-// set basic typographic rhythm. adjust in _base.scss
-// further explanation required? read http://atendesigngroup.com/blog/vertical-rhythm-compass
+// set basic typographic rhythm. adjust in _custom.scss
+// further reading: http://atendesigngroup.com/blog/vertical-rhythm-compass
 @include establish-baseline;
 
 body {
@@ -85,13 +90,6 @@ img {
 
 // Navigation
 
-nav#topnav {
-  @include horizontal-list;
-  ul li {
-    @include adjust-leading-to(2);
-  }
-}
-
 nav#breadcrumb {
   @include horizontal-list;
   ul li {
@@ -112,10 +110,43 @@ nav#breadcrumb {
 
 // Search form
 
+#site-search-form {
+  float: right;
+}
+
 #site-search {
   ul li {
     @include adjust-leading-to(2);
-    float: left;
+    display: inline;
   }
+}
+
+// Google Maps
+
+#gmap {
+  width: auto;
+  height: 500px;
+}
+
+// make sure google maps controls are visible - http://stackoverflow.com/questions/9904379/google-map-zoom-controls-not-displaying-correctly
+
+.gmnoprint img {
+  max-width: none;
+}
+
+// Superfish individual styling
+
+.sf-menu li {
+  background: #EEEEEE;
+  &:hover, &.sfHover {
+    background: #DDD;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+.sf-menu ul li {
+  background: #BEBEBE;
 }
 
