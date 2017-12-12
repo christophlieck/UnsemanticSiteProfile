@@ -1,5 +1,5 @@
 # About Unsemantic Site Profile
-This is a basic site profile for Processwire CMS Framework (http://processwire.com/) based on the fully responsive Unsemantic Grid System (http://unsemantic.com/). It is meant as a starting point for quick development of responsive designs and/or mockups in Processwire.
+This is a basic site profile for Processwire CMS (http://processwire.com/) based on the fully responsive Unsemantic Grid System (http://unsemantic.com/). It is meant as a starting point for quick development of responsive designs and/or mockups in Processwire.
 
 As Unsemantic grid system does, the profile takes advantage of the SASS CSS preprocessor (http://sass-lang.com/) and the Compass authoring framework for SASS (http://compass-style.org/). Though not mandatory, I recommend installing SASS and Compass to benefit from the full potential of the profile.
 
